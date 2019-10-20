@@ -1,0 +1,44 @@
+.header {
+  padding: 12px 0;
+  background-color: $color-green-light;
+
+  @media (min-width: 1919px) {
+    padding: 16px 0;
+  }
+}
+
+.header__wrapper {
+  position: relative;
+
+}
+
+.header__heading {
+  margin: auto 0 0;
+  flex-shrink: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1;
+  color: $color-green;
+  text-transform: uppercase;
+
+  @media (min-width: 1919px) {
+    font-size: 64px;
+  }
+}
+
+.header__caption {
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0 0 auto;
+  padding-top: 2px;
+  font-weight: 400;
+  font-size: 20px;
+  color: $color-green;
+  text-transform: uppercase;
+
+  @media (min-width: 1919px) {
+    font-size: 24px;
+  }
+}

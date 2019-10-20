@@ -1,0 +1,28 @@
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-green;
+
+  @media (min-width: 1919px) {
+    font-size: 20px;
+  }
+}
