@@ -6,6 +6,11 @@ const del = require('del');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
+const commonjs = require('rollup-plugin-commonjs');
+const nodeResolve = require('rollup-plugin-node-resolve');
+const optimizeJs = require('rollup-plugin-optimize-js');
+const { uglify } = require('rollup-plugin-uglify');
+const babelRollup = require('rollup-plugin-babel');
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -33,15 +38,46 @@ function styles() {
     .pipe(server.reload({stream: true}));
 };
 
+const rollupPlugins = [
+  commonjs(),
+  nodeResolve(),
+  babelRollup({
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }),
+];
+
+if (isProd) {
+  rollupPlugins.push( uglify({
+    compress: {
+      drop_console: true
+    }}) );
+  rollupPlugins.push( optimizeJs());
+}
+
+// function scripts() {
+//   return src('app/scripts/**/*.js')
+//     .pipe($.plumber())
+//     .pipe($.if(!isProd, $.sourcemaps.init()))
+//     .pipe($.babel())
+//     .pipe($.if(!isProd, $.sourcemaps.write('.')))
+//     .pipe(dest('.tmp/scripts'))
+//     .pipe(server.reload({stream: true}));
+// };
+
 function scripts() {
   return src('app/scripts/**/*.js')
     .pipe($.plumber())
     .pipe($.if(!isProd, $.sourcemaps.init()))
-    .pipe($.babel())
+    .pipe($.betterRollup({
+        plugins: rollupPlugins
+      },
+      'iife'))
     .pipe($.if(!isProd, $.sourcemaps.write('.')))
     .pipe(dest('.tmp/scripts'))
     .pipe(server.reload({stream: true}));
-};
+}
 
 
 const lintBase = files => {

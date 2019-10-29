@@ -1,5 +1,24 @@
 .main-nav {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  display: block;
+  width: 100%;
   background-color: #000;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  @media (min-width: 1919px) {
+    top: 52px;
+
+    &--fixed {
+      top: 0;
+    }
+  }
 }
 
 .main-nav__list {
