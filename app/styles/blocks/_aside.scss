@@ -1,0 +1,27 @@
+.aside {
+  position: relative;
+  flex-shrink: 0;
+  width: 320px;
+
+  @media (min-width: 1919px) {
+    width: 348px;
+  }
+}
+
+.aside__section {
+  position: relative;
+  padding: 0 32px 0;
+  margin-bottom: 56px;
+  box-sizing: border-box;
+}
+
+.aside__section-heading {
+  margin: 0 0 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000000;
+}

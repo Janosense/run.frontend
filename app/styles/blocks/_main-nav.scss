@@ -1,3 +1,7 @@
+.main-nav {
+  background-color: #000;
+}
+
 .main-nav__list {
   list-style-type: none;
   display: flex;
@@ -20,7 +24,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-green;
+  color: #fff;
 
   @media (min-width: 1919px) {
     font-size: 20px;

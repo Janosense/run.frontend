@@ -1,76 +1,357 @@
-<!doctype html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Run and fun!</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/main.css -->
-<!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900|Source+Sans+Pro:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">-->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body class="body">
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Run and fun!</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <!--  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Source+Sans+Pro:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">-->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body class="body">
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <h1 class="header__heading">Бег любит сильных</h1>
+<!--    <p class="header__caption">журнал бегуна</p>-->
+  </div>
+</header>
 
-    <header class="header">
-      <div class="wrapper header__wrapper">
-        <h1 class="header__heading"><span>R</span>un <span>a</span>nd <span>F</span>un!</h1>
-        <p class="header__caption">Журнал бегуна</p>
-<!--        <div class="tracks">-->
-<!--          <ul class="tracks__list">-->
-<!--            <li class="tracks__item"><span>1</span></li>-->
-<!--            <li class="tracks__item"><span>2</span></li>-->
-<!--            <li class="tracks__item"><span>3</span></li>-->
-<!--            <li class="tracks__item"><span>4</span></li>-->
-<!--            <li class="tracks__item"><span>5</span></li>-->
-<!--            <li class="tracks__item"><span>6</span></li>-->
-<!--            <li class="tracks__item"><span>7</span></li>-->
-<!--            <li class="tracks__item"><span>8</span></li>-->
-<!--          </ul>-->
-<!--        </div>-->
+<nav class="main-nav">
+  <div class="wrapper main-nav__wrapper">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Главная</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Статьи</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Тренировки</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Календарь</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Летопись</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Номера</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">Обо мне</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="wrapper wrapper--two-cols">
+
+  <main class="main">
+    <div class="posts-preview">
+      <ul class="posts-preview__list">
+        <li class="posts-preview__item posts-preview__item--grey">
+          <span class="posts-preview__date2">12.10.2019</span>
+          <h3 class="posts-preview__heading"><a href="#">Как я пробежал свои первые 30 киллометров</a></h3>
+          <a href="#" class="posts-preview__cover">
+            <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"
+                 class="posts-preview__thumb">
+            <span class="posts-preview__cover-title">Race Nation Буковель 2019</span>
+          </a>
+          <p class="posts-preview__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat...
+          </p>
+          <ul class="posts-preview__categories">
+            <li class="posts-preview__categories-item">
+              <a href="#" class="posts-preview__categories-link">Race Nation</a>
+            </li>
+            <li class="posts-preview__categories-item">
+              <a href="#" class="posts-preview__categories-link">Забеги</a>
+            </li>
+          </ul>
+        </li>
+        <li class="posts-preview__item">
+          <span class="posts-preview__date2">6.10.2019</span>
+          <h3 class="posts-preview__heading"><a href="#">Race Nation Буковель 2019</a></h3>
+          <p class="posts-preview__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat...
+          </p>
+          <ul class="posts-preview__categories">
+            <li class="posts-preview__categories-item">
+              <a href="#" class="posts-preview__categories-link">Тренировки</a>
+            </li>
+          </ul>
+        </li>
+        <li class="posts-preview__item posts-preview__item--black ">
+          <span class="posts-preview__date2">6.10.2019</span>
+          <h3 class="posts-preview__heading"><a href="#">Race Nation Буковель 2019</a></h3>
+          <p class="posts-preview__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat...
+          </p>
+          <ul class="posts-preview__categories">
+            <li class="posts-preview__categories-item">
+              <a href="#" class="posts-preview__categories-link">Тренировки</a>
+            </li>
+          </ul>
+        </li>
+        <li class="posts-preview__item">
+          <span class="posts-preview__date2">11.09.2019</span>
+          <h3 class="posts-preview__heading"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+          <a href="#" class="posts-preview__cover">
+            <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"
+                 class="posts-preview__thumb">
+          </a>
+          <p class="posts-preview__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <ul class="posts-preview__categories">
+            <li class="posts-preview__categories-item">
+              <a href="#" class="posts-preview__categories-link">Тренировки</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="training">
+      <div class="training__header">
+        <div class="training__heading">Мои тренировки</div>
+        <a href="#" title="Мой профиль в Strava" class="training__strava-logo">
+          <img src="images/strava-logo.svg" alt="Strava">
+        </a>
       </div>
-    </header>
 
-    <nav class="main-nav">
-      <div class="wrapper main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Главная</a>
+      <ul class="training__list">
+        <li class="training__item">
+          <a href="" class="training__title">Afternoon run</a>
+          <div class="training__info">
+            <div class="training__distance">
+              <span class="training__info-title">Дистанция</span>
+              <span class="training__info-value">31,11</span><span class="training__info-km">км</span>
+            </div>
+            <div class="training__time">
+              <span class="training__info-title">Время</span>
+              <span class="training__info-value">2:50:14</span>
+            </div>
+            <div class="training__pace">
+              <span class="training__info-title">Темп</span>
+              <span class="training__info-value">5:28</span><span class="training__info-km">/км</span>
+            </div>
+          </div>
+          <p class="training__sneakers">Hoka One One <span class="training__sneakers-model">Mafate Speed 2</span></p>
+        </li>
+        <li class="training__item">
+          <a href="" class="training__title">Eveningn run</a>
+          <div class="training__info">
+            <div class="training__distance">
+              <span class="training__info-title">Дистанция</span>
+              <span class="training__info-value">9,0</span><span class="training__info-km">км</span>
+            </div>
+            <div class="training__time">
+              <span class="training__info-title">Время</span>
+              <span class="training__info-value">2:50:14</span>
+            </div>
+            <div class="training__pace">
+              <span class="training__info-title">Темп</span>
+              <span class="training__info-value">5:28</span><span class="training__info-km">/км</span>
+            </div>
+          </div>
+          <p class="training__sneakers">Hoka One One <span class="training__sneakers-model">Gaviota 2</span></p>
+        </li>
+        <li class="training__item">
+          <a href="" class="training__title">Intervals 8 x 40"/2'</a>
+          <div class="training__info">
+            <div class="training__distance">
+              <span class="training__info-title">Дистанция</span>
+              <span class="training__info-value">31,11</span><span class="training__info-km">км</span>
+            </div>
+            <div class="training__time">
+              <span class="training__info-title">Время</span>
+              <span class="training__info-value">2:50:14</span>
+            </div>
+            <div class="training__pace">
+              <span class="training__info-title">Темп</span>
+              <span class="training__info-value">5:28</span><span class="training__info-km">/км</span>
+            </div>
+          </div>
+          <p class="training__sneakers">Hoka One One <span class="training__sneakers-model">Gaviota 2</span></p>
+        </li>
+        <li class="training__item">
+          <a href="" class="training__title">Eveningn run</a>
+          <div class="training__info">
+            <div class="training__distance">
+              <span class="training__info-title">Дистанция</span>
+              <span class="training__info-value">9,0</span><span class="training__info-km">км</span>
+            </div>
+            <div class="training__time">
+              <span class="training__info-title">Время</span>
+              <span class="training__info-value">2:50:14</span>
+            </div>
+            <div class="training__pace">
+              <span class="training__info-title">Темп</span>
+              <span class="training__info-value">5:28</span><span class="training__info-km">/км</span>
+            </div>
+          </div>
+          <p class="training__sneakers">Hoka One One <span class="training__sneakers-model">Gaviota 2</span></p>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+  <aside class="aside">
+    <div class="aside__section statistics">
+      <div class="statistics__header">
+        <h3 class="statistics__heading">Статистика</h3>
+      </div>
+      <div class="statistics__content">
+        <div class="statistics__row statistics__row--total-distance">
+          <div class="statistics__row-title">пробежал</div>
+          <div><span class="statistics__total-distance">1 286,9</span>км</div>
+        </div>
+        <div class="statistics__row">
+          <div class="statistics__row-title">лучшее время</div>
+        </div>
+        <div class="statistics__row">
+          <span class="statistics__distance">1 км</span> <span class="statistics__distance-value">4:00</span>
+        </div>
+        <div class="statistics__row">
+          <span class="statistics__distance">1 миля</span> <span class="statistics__distance-value">6:43</span>
+        </div>
+        <div class="statistics__row">
+          <span class="statistics__distance">5 км</span> <span class="statistics__distance-value">22:34</span>
+        </div>
+        <div class="statistics__row">
+          <span class="statistics__distance">10 км</span> <span class="statistics__distance-value">46:07</span>
+        </div>
+        <div class="statistics__row">
+          <span class="statistics__distance">полумарафон</span> <span class="statistics__distance-value"><a
+          href="https://my5.raceresult.com/138795/15705/Certificate%2021km" target="_blank">1:41:56,4</a></span>
+        </div>
+        <div class="statistics__row statistics__row--marathon">
+          <span class="statistics__distance">марафон</span> <span class="statistics__distance-value">-</span>
+        </div>
+        <div class="statistics__row">
+          <div class="statistics__row-title">забегов</div>
+          <span class="statistics__big-number">134</span>
+        </div>
+        <div class="statistics__row">
+          <div class="statistics__row-title">стартов</div>
+          <span class="statistics__big-number">20</span>
+        </div>
+      </div>
+      <span class="statistics__date">ведется с 5.05.2019</span>
+    </div>
+
+    <div class="aside__section">
+      <h3 class="aside__section-heading">Ближайшие старты</h3>
+      <div class="starts">
+        <ul class="starts__list">
+          <li class="starts__item">
+            <span class="starts__date">02.11</span>
+            <div class="starts__header">
+              <span class="starts__place">Киев, Пуща Водица</span></div>
+            <a href="" class="starts__link" target="_blank">Каланча трейл</a>
+            <!--            <span class="starts__organizer">Salomon Running Club Ukraine </span>-->
+            <div class="starts__event-distance"><span>21</span>км</div>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Статьи</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Тренировки</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Календарь</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Обо мне</a>
+          <li class="starts__item">
+            <span class="starts__date">10.11</span>
+            <div class="starts__header">
+              <span class="starts__place">Киев, Дарница</span></div>
+            <a href="" class="starts__link" target="_blank">Осенний кубок "Днепровская десятка"</a>
+            <!--            <span class="starts__organizer">SC "Scientist", Днепровская РГА </span>-->
+            <div class="starts__event-distance"><span>10.8</span>км</div>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--    <script>-->
-<!--      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
-<!--      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
-<!--      e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
-<!--      e.src='https://www.google-analytics.com/analytics.js';-->
-<!--      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
-<!--      ga('create','UA-XXXXX-X');ga('send','pageview');-->
-<!--    </script>-->
-    <!-- build:js scripts/vendor.js -->
-    <!-- endbuild -->
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+    <div class="aside__section last-results">
+      <h3 class="aside__section-heading">Последние результаты</h3>
+      <div class="last-results__content">
+        <ul class="last-results__list">
+          <li class="last-results__item">
+            <div class="last-results__event last-results__event--race-nation">
+              <span class="last-results__event-date">10.10.2019</span>
+              <div class="last-results__event-title">Race Nation Bukovel <br> <span>(Team Standart)</span></div>
+              <div class="last-results__event-distance"><span>10</span>км+/<span>25</span>obs.+</div>
+            </div>
+            <div class="last-results__result">
+              <span class="last-results__time">7/13</span>
+              <div class="last-results__info">
+                <span class="last-results__diff">11:12:30</span>
+              </div>
+            </div>
+          </li>
+          <li class="last-results__item">
+            <div class="last-results__event">
+              <span class="last-results__event-date">10.10.2019</span>
+              <span class="last-results__event-title">Wizz Air Kyiv city Marathon</span>
+              <div class="last-results__event-distance"><span>21.085</span>км</div>
+            </div>
+            <div class="last-results__result">
+              <span class="last-results__time">1:41:56,4</span>
+              <div class="last-results__info">
+                <span class="last-results__personal-best">ЛР</span>
+                <span class="last-results__diff">-01:00</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aside__section">
+      <h3 class="aside__section-heading">Мои кроссовки</h3>
+      <ul class="sneakers">
+        <li class="sneakers__item">
+          <div class="sneakers__title">
+            <span class="sneakers__brand">Hoke One One</span>
+            <span class="sneakers__model"><a href="#">Gaviota 2</a></span>
+          </div>
+          <div class="sneakers__distance">854.6<span>км</span></div>
+        </li>
+        <li class="sneakers__item">
+          <div class="sneakers__title">
+            <span class="sneakers__brand">Hoke One One</span>
+            <span class="sneakers__model"><a href="#">Mafate Speed 2</a></span>
+          </div>
+          <div class="sneakers__distance">47<span>км</span></div>
+        </li>
+        <li class="sneakers__item">
+          <div class="sneakers__title">
+            <span class="sneakers__brand">Saucony</span>
+            <span class="sneakers__model"><a href="#">Excursion TR12</a></span>
+          </div>
+          <div class="sneakers__distance">243.5<span>км</span></div>
+        </li>
+        <li class="sneakers__item">
+          <div class="sneakers__title">
+            <span class="sneakers__brand">Asics</span>
+            <span class="sneakers__model"><a href="#">GT 1000 9</a></span>
+          </div>
+          <div class="sneakers__distance">201<span>км</span></div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
 </html>

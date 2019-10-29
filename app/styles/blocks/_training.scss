@@ -1,0 +1,100 @@
+.training {
+  flex-shrink: 0;
+  width: 40%;
+  height: 100%;
+  padding: 32px 28px 0 0;
+  box-sizing: border-box;
+
+  @media (min-width: 1919px) {
+    padding-right: 40px;
+  }
+}
+
+.training__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.training__heading {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.training__strava-logo {
+  //position: relative;
+  //top: 2px;
+  display: block;
+  width: 100px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.training__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.training__item {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.training__title {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+}
+
+.training__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.training__info-value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  //opacity: 0.35;
+}
+
+.training__info-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  //text-align: center;
+}
+
+.training__info-km {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.training__sneakers {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.training__sneakers-model {
+  font-weight: 400;
+}
