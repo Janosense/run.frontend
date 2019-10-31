@@ -19,6 +19,8 @@
 @import "blocks/training";
 @import "blocks/tags";
 @import "blocks/similar-posts";
+@import "blocks/footer";
+@import "blocks/socials";
 
 .tracks {
   position: absolute;
@@ -95,4 +97,11 @@
       background-color: $color-grey;
     }
   }
+}
+
+.layout {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 84px;
+  background-color: #fff;
 }
