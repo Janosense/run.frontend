@@ -1,0 +1,39 @@
+.goals {
+  padding: 64px 0;
+}
+
+.goals__wrapper {
+  //display: flex;
+  position: relative;
+}
+
+.goals__heading {
+  position: absolute;
+  top: 250px;
+  right: -180px;
+  flex-shrink: 0;
+  margin: 0;
+  //padding-left: 367px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  transform: rotate(-90deg);
+  //transform-origin: 0 0;
+}
+
+.goals__track {
+  margin-bottom: 40px;
+  padding-right: 64px;
+  box-sizing: border-box;
+}
+
+.goals__text {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: right;
+
+  p {
+    margin: 0;
+  }
+}
