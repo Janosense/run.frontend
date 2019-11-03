@@ -13,10 +13,22 @@
   }
 
   @media (min-width: 1919px) {
-    top: 52px;
+    top: 56px;
 
     &--fixed {
       top: 0;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+
+    .main-nav__link {
+      color: #000;
+
+      &::after {
+        background-color: #000;
+      }
     }
   }
 }
