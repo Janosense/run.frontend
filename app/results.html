@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бег любит сильных</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <!--  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Source+Sans+Pro:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">-->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body class="body">
+<div class="layout">
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <h1 class="header__heading">Бег любит сильных</h1>
+      <p class="header__caption">персональный блог</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="wrapper main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="/" class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Календарь</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="/results.html" class="main-nav__link main-nav__link--active">Результаты</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="/history.html" class="main-nav__link">История</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Номера</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Статьи</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="/about.html" class="main-nav__link">Обо мне</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- RESULTS start -->
+    <div class="results">
+      <div class="wrapper results__wrapper">
+        <header class="results__header">
+          <h1 class="results__heading">Мои результаты</h1>
+          <p class="results__caption">
+            Тут собраны результаты всех официальных забегов и тренировок (с фикцацией результата), в которых я принимал участие.
+            Результаты я резделил на группы <a href="#">Марафон</a>, <a href="#">Полумарафон</a>, <a href="#">10км</a>,
+            <a href="#">Трейл</a>, <a href="#">OCR</a>
+          </p>
+        </header>
+        <div class="results__group">
+          <h2 class="results__group-title">Марафон</h2>
+          <p class="results__group-empty">В этой групппе записей пока нет.</p>
+        </div>
+
+        <div class="results__group">
+          <h2 class="results__group-title">Полумарафон</h2>
+
+          <div class="results__statistics">
+            <p>Всего забегов: <span>12</span></p>
+            <p>Лучший результат: <span>1:41:56,4</span></p>
+          </div>
+          <div class="results__table-holder">
+            <table class="results-table">
+              <tr>
+                <th>п/п</th>
+                <th>дата</th>
+                <th>мероприятие</th>
+                <th>время<br> <span>разница с ЛР</span></th>
+<!--                <th>ЛР</th>-->
+                <th>темп</th>
+                <th colspan="3">место<br> <span>абс / муж / возр</span></th>
+              </tr>
+              <tr>
+                <td colspan="9" class="results-table__year">2019</td>
+              </tr>
+              <tr class="results-table__pb">
+                <td class="results-table__row-number">3</td>
+                <td>19.10.2019</td>
+                <td class="results-table__place">
+                  Under Armor Half Marathon<br>
+                  <span>Киев, Украина</span>
+                </td>
+                <td class="results-table__result">1:41:56,4<span>-01:00</span></td>
+<!--                <td>-1:00</td>-->
+                <td class="results-table__pace">4:48</td>
+                <td>300/2300</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="results-table__row-number">2</td>
+                <td>19.10.2019</td>
+                <td class="results-table__place">
+                  Tavria V Odessa Half marathon<br>
+                  <span>Одесса, Украина</span>
+                </td>
+                <td class="results-table__result">1:42:56,4 <span>-05:12</span></td>
+<!--                <td>-5:00 <span>(от 01:46:34)</span></td>-->
+                <td class="results-table__pace">4:59</td>
+                <td>300/2300</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="results-table__row-number">1</td>
+                <td>19.10.2019</td>
+                <td class="results-table__place">
+                  2 Петропавловский полумарафон "Чайка"<br>
+                  <span>Киев, Украина</span>
+                </td>
+                <td class="results-table__result">1:47:56,4</td>
+<!--                <td></td>-->
+                <td class="results-table__pace">4:47</td>
+                <td>70/2300</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RESULTS end -->
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <div class="socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" target="_blank" class="socials__link socials__link--strava">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Strava icon</title>
+              <path fill="#ffffff"
+                    d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" target="_blank" class="socials__link socials__link--fb">
+            <svg role="img" viewBox="0 0 13.68 29.43" xmlns="http://www.w3.org/2000/svg">
+              <title>Facebook icon</title>
+              <path fill="#ffffff"
+                    d="M13.14,14.73H9v14.7H2.91V14.73H0V9.53H2.91V6.17C2.91,3.76,4.05,0,9.08,0L13.6,0v5H10.32A1.25,1.25,0,0,0,9,6.48v3h4.66Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" target="_blank" class="socials__link socials__link--instagram">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram icon</title>
+              <path fill="#ffffff"
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- build:js scripts/vendor.js -->
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
