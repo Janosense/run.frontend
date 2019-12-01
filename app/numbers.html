@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body class="body body--black">
+<body class="body">
 <div class="layout">
   <header class="header">
     <div class="wrapper header__wrapper">
@@ -33,10 +33,10 @@
           <a href="/results.html" class="main-nav__link">Результаты</a>
         </li>
         <li class="main-nav__item">
-          <a href="/history.html" class="main-nav__link main-nav__link--active">История</a>
+          <a href="/history.html" class="main-nav__link">История</a>
         </li>
         <li class="main-nav__item">
-          <a href="/numbers.html" class="main-nav__link">Номера</a>
+          <a href="/numbers.html" class="main-nav__link main-nav__link--active">Номера</a>
         </li>
         <li class="main-nav__item">
           <a href="#" class="main-nav__link">Статьи</a>
@@ -49,71 +49,97 @@
   </nav>
 
   <main>
-    <div class="history">
-      <div class="wrapper history__wrapper">
 
-        <ul class="history__years">
-          <li class="history__years-item">
-            <button class="history__year history__year--active" type="button" data-year="2019">2019</button>
+    <!-- NUMBERS start -->
+    <div class="numbers">
+      <div class="numbers__wrapper">
+        <ul class="numbers__list">
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg" class="numbers__image-holder">
+              <img src="images/numbers/num-8.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon</span>
+            </div>
           </li>
-          <li class="history__years-item">
-            <button class="history__year" type="button" data-year="2020">2020</button>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-9.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-9.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Race Nation Lviv</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-1.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-1.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-2.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-3.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-4.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-5.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-6.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
+          </li>
+          <li class="numbers__item">
+            <div data-src="images/numbers/num-8.jpg"  class="numbers__image-holder">
+              <img src="images/numbers/num-7.jpg" alt="" class="numbers__image">
+            </div>
+            <div class="numbers__info">
+              <span class="numbers__date">13.09.2019</span>
+              <span class="numbers__event">Wizz Air Marathon 2019</span>
+            </div>
           </li>
         </ul>
-
-        <div class="time-line">
-          <span class="time-line__designation time-line__designation--left">OCR, трейлы</span>
-          <span class="time-line__designation time-line__designation--right">Шоссе</span>
-          <ul class="time-line__list">
-            <li class="event event--right time-line__item">
-              <span class="event__pb">PB</span>
-              <div class="event__header">
-                <span class="event__date">12.10.2019</span>
-                <span class="event__place">Киев, Украина</span>
-              </div>
-              <h3 class="event__title">Wizz Air Kyiv City Marathon</h3>
-              <div class="event__distance">21,085<span>км</span></div>
-              <div class="event__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-              </div>
-              <div class="event__result">
-                <span class="event__result-time">1:41:57,4</span> <span class="event__result-pace">4:47 / km</span>
-                <table class="event__result-places">
-                  <tr>
-                    <td>aбс.:</td>
-                    <td>300 / 2344</td>
-                  </tr>
-                  <tr>
-                    <td>муж.:</td>
-                    <td>100 / 1020</td>
-                  </tr>
-                  <tr>
-                    <td>в. 30 - 38:</td>
-                    <td> 20 / 134</td>
-                  </tr>
-                </table>
-              </div>
-            </li>
-            <li class="event event--left time-line__item">
-              <div class="event__header">
-                <span class="event__date">19.10.2019</span>
-                <span class="event__place">Буковель, Украина</span>
-              </div>
-              <h3 class="event__title">Race Nation Bukovel</h3>
-              <div class="event__distance">Team Standart <span>10km+ / 25obs.+</span></div>
-              <div class="event__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-              </div>
-              <div class="event__result">
-                <span class="event__result-time">7 / 13</span>
-              </div>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
+    <!-- NUMBERS end -->
+
   </main>
 
 </div>

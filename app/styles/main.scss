@@ -30,11 +30,14 @@
 @import "blocks/event";
 @import "blocks/results";
 @import "blocks/results-table";
+@import "blocks/numbers";
 
 
 .layout {
   position: relative;
   z-index: 10;
-  margin-bottom: 84px;
+  margin-bottom: 82px;
   background-color: #fff;
 }
+
+
