@@ -1,7 +1,10 @@
 .wrapper {
   padding: 0 16px;
   box-sizing: border-box;
-  margin-bottom: 100px;
+
+  @media (min-width: 374px) {
+    padding: 0 24px;
+  }
 
   &--two-cols {
     display: flex;

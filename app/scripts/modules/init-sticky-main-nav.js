@@ -5,7 +5,7 @@ const settings = {
 const init_sticky_main_nav = () => {
   const header = document.querySelector('.header');
   const main_nav = document.querySelector('.main-nav');
-  if (main_nav) {
+  if (main_nav && document.documentElement.clientWidth > 767) {
     window.addEventListener('scroll', (evt) => {
       if (!settings.is_fixed && window.scrollY >= (main_nav.getBoundingClientRect().top + window.scrollY)) {
         main_nav.classList.add('main-nav--fixed');

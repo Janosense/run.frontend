@@ -1,15 +1,45 @@
 .main-nav {
-  position: absolute;
-  top: 88px;
-  left: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
   display: block;
+  align-items: center;
   width: 100%;
+  max-height: calc(100vh - 52px);
   background-color: #000;
+  opacity: 0;
+  transition: all 0.2s linear;
 
-  &--fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  &--active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (min-width: 767px) {
+    visibility: visible;
+    position: absolute;
+    top: 68px;
+    height: auto;
+    opacity: 1;
+    transition: none;
+    pointer-events: auto;
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+
+  @media (min-width: 1023px) {
+    top: 88px;
+
+    &--fixed {
+      top: 0;
+    }
   }
 
   @media (min-width: 1919px) {
@@ -37,33 +67,61 @@
   position: relative;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 16px 0 4px;
+  width: 100%;
+
+  @media (min-width: 374px) {
+    padding: 24px 0 12px;
+  }
+
+  @media (min-width: 767px) {
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__item {
-  margin-right: 28px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+  text-align: left;
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: 767px) {
+    margin-right: 28px;
+    margin-bottom: 0;
+    text-align: left;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .main-nav__link {
   position: relative;
   display: block;
-  padding: 12px 0;
+  padding: 4px 0;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1;
   text-decoration: none;
   color: #fff;
+
+  @media (min-width: 767px) {
+    padding: 12px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 
   @media (min-width: 1919px) {
     font-size: 20px;
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 767px) {
     &::after {
       content: "";
       position: absolute;
@@ -80,10 +138,17 @@
   }
 
   &--active {
-    &::after {
-      transform: translate(0, 0) scaleX(1);
-      opacity: 1;
+    border-bottom: 1px dashed #fff;
+
+    @media (min-width: 767px) {
+      border-bottom: none;
+
+      &::after {
+        transform: translate(0, 0) scaleX(1);
+        opacity: 1;
+      }
     }
+
   }
 }
 
