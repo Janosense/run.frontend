@@ -1,5 +1,24 @@
 .starts {
+  position: relative;
+  width: 100%;
+  padding: 0 32px 0;
+  margin-bottom: 56px;
+  box-sizing: border-box;
 
+  @media (min-width: 1919px) {
+    padding: 0 40px 0;
+  }
+}
+
+.starts__heading {
+  margin: 0 0 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000000;
 }
 
 .starts__list {
