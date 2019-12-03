@@ -7,9 +7,12 @@
   }
 
   &--two-cols {
-    display: flex;
-    padding-top: 52px;
-    padding-bottom: 52px;
+
+    @media (min-width: 1023px) {
+      display: flex;
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
   }
 
   @media (min-width: 767px) {
@@ -43,6 +46,11 @@
   }
 
   &--front-page {
-    padding-bottom: 32px;
+    padding: 0;
+    @media (min-width: 1023px) {
+      display: flex;
+      padding: 52px 64px 32px;
+    }
+    //padding-bottom: 32px;
   }
 }

@@ -32,24 +32,36 @@
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
+  text-align: right;
   color: #000000;
 }
 
 .posts-preview__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .posts-preview__item {
   position: relative;
-  width: 33.3333%;
+  width: 100%;
   margin-bottom: 52px;
   padding: 32px;
   box-sizing: border-box;
+
+  @media (min-width: 767px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1023px) {
+    width: 33.3333%;
+  }
 
   &:nth-child(3n) {
     margin-right: 0;

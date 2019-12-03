@@ -1,9 +1,13 @@
 .training {
   flex-shrink: 0;
-  width: 52%;
-  height: 100%;
+  margin-bottom: 32px;
   padding: 0 32px;
   box-sizing: border-box;
+
+  @media (min-width: 767px) {
+    width: 52%;
+    margin-bottom: 0;
+  }
 
   @media (min-width: 1919px) {
     padding: 0 40px;
@@ -70,9 +74,15 @@
 }
 
 .training__item {
-  padding-bottom: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 1023px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
 
   &:last-child {
     margin-bottom: 0;
