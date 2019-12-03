@@ -4,6 +4,10 @@
   box-sizing: border-box;
   color: #fff;
   background-color: #000;
+
+  @media (min-width: 1919px) {
+    padding: 40px 40px 60px;
+  }
 }
 
 .statistics__header {

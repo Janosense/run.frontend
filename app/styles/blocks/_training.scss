@@ -1,39 +1,39 @@
 .training {
   flex-shrink: 0;
-  width: 40%;
+  width: 52%;
   height: 100%;
-  padding: 0 28px 0 0;
+  padding: 0 32px;
   box-sizing: border-box;
 
   @media (min-width: 1919px) {
-    padding-right: 40px;
+    padding: 0 40px;
   }
 }
 
 .training__header {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .training__header-layout {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   &:first-child {
     margin-bottom: 4px;
   }
-
-  &:last-child {
-    justify-content: flex-start;
-  }
 }
 
 .training__count {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
+  width: 100%;
   margin: 0;
   font-weight: 300;
   font-size: 14px;
+  line-height: 1;
 
   span {
     display: block;
@@ -76,6 +76,7 @@
 
   &:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
     border-bottom: none;
   }
 }

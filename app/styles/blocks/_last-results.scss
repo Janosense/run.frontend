@@ -1,8 +1,14 @@
 .last-results {
+  width: 100%;
   position: relative;
+  margin-bottom: 56px;
   padding: 40px 32px 60px;
   box-sizing: border-box;
   background-color: #f1f1f1;
+
+  @media (min-width: 1919px) {
+    padding: 40px 40px 60px;
+  }
 }
 
 .last-results__list {

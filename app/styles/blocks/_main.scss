@@ -1,4 +1,10 @@
 .main {
   display: flex;
   flex-grow: 1;
+  align-items: flex-start;
+
+  &__info {
+    flex-shrink: 0;
+    width: 48%;
+  }
 }

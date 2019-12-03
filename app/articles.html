@@ -27,7 +27,7 @@
           <a href="/" class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="/calendar.html" class="main-nav__link main-nav__link--active">Календарь</a>
+          <a href="/calendar.html" class="main-nav__link">Календарь</a>
         </li>
         <li class="main-nav__item">
           <a href="/results.html" class="main-nav__link">Результаты</a>
@@ -39,7 +39,7 @@
           <a href="/numbers.html" class="main-nav__link">Номера</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Статьи</a>
+          <a href="/articles.html" class="main-nav__link main-nav__link--active">Записи</a>
         </li>
         <li class="main-nav__item">
           <a href="/about.html" class="main-nav__link">Обо мне</a>
@@ -50,82 +50,122 @@
 
 
   <main>
-    <div class="calendar">
-      <div class="wrapper calendar__wrapper">
-        <header class="calendar__header">
-          <h1 class="calendar__heading">Мои календарь</h1>
-          <p class="calendar__caption">
-            Тут собраны результаты всех официальных забегов и тренировок (с фикцацией результата), в которых я принимал участие.
-            Результаты я резделил на группы <a href="#">Есть слот</a>, <a href="#">Запланировано</a>
-          </p>
-        </header>
-        <div class="calendar__group">
-          <h1 class="calendar__group-title">Есть слот</h1>
-          <ul class="calendar__list">
-            <li class="calendar__item calendar-event calendar-event--header">
-              <span class="calendar-event__date">Дата / тип</span>
-              <h3 class="calendar-event__title">
-                Название (организатор)
-              </h3>
-              <div class="calendar-event__distance">Дистанция</div>
-              <div class="calendar-event__place">Место проведения</div>
-              <span class="calendar-event__slot">Старт. номер</span>
-            </li>
-            <li class="calendar__item calendar-event">
-              <span class="calendar-event__type">Шоссе</span>
-              <span class="calendar-event__date">04.04.2020</span>
-              <h3 class="calendar-event__title">
-                <a href="#">Новая Почта Киевский полумарафон</a> <span>(Run Ukraine)</span>
-              </h3>
-              <div class="calendar-event__distance"><span>21,095</span>км</div>
-              <div class="calendar-event__place">Киев, Украина</div>
-              <span class="calendar-event__slot">10199</span>
-            </li>
-            <li class="calendar__item calendar-event">
-              <span class="calendar-event__type">Трейл</span>
-              <span class="calendar-event__date">03.05.2020</span>
-              <h3 class="calendar-event__title">
-                <a href="#">Ice Trail</a> <span>(UTL)</span>
-              </h3>
-              <div class="calendar-event__distance"><span>32</span>км</div>
-              <div class="calendar-event__place">Буковель, Украина</div>
-              <span class="calendar-event__slot">10199</span>
-            </li>
-          </ul>
-        </div>
-        <div class="calendar__group">
-          <h2 class="calendar__group-title">Запланировано</h2>
-          <ul class="calendar__list calendar__list--plan">
-            <li class="calendar__item calendar-event calendar-event--header">
-              <span class="calendar-event__date">Дата / тип</span>
-              <h3 class="calendar-event__title">
-                Название (организатор)
-              </h3>
-              <div class="calendar-event__distance">Дистанция</div>
-              <div class="calendar-event__place">Место проведения</div>
-            </li>
-            <li class="calendar__item calendar-event">
-              <span class="calendar-event__type">Шоссе</span>
-              <span class="calendar-event__date">04.04.2020</span>
-              <h3 class="calendar-event__title">
-                <a href="#">Новая Почта Киевский полумарафон</a> <span>(Run Ukraine)</span>
-              </h3>
-              <div class="calendar-event__distance"><span>21,095</span>км</div>
-              <div class="calendar-event__place">Киев, Украина</div>
-            </li>
-            <li class="calendar__item calendar-event">
-              <span class="calendar-event__type">Трейл</span>
-              <span class="calendar-event__date">03.05.2020</span>
-              <h3 class="calendar-event__title">
-                <a href="#">Ice Trail</a> <span>(UTL)</span>
-              </h3>
-              <div class="calendar-event__distance"><span>32</span>км</div>
-              <div class="calendar-event__place">Буковель, Украина</div>
-            </li>
-          </ul>
-        </div>
+
+    <div class="posts-preview posts-preview--inner">
+      <div class="wrapper posts-preview__wrapper">
+        <h2 class="posts-preview__heading-main">Записи</h2>
+        <ul class="posts-preview__list">
+          <li class="posts-preview__item posts-preview__item--grey">
+            <span class="posts-preview__date2">12.10.2019</span>
+            <h3 class="posts-preview__heading"><a href="/single.html">Как я пробежал свои первые 30 киллометров</a></h3>
+            <!--                <a href="#" class="posts-preview__cover">-->
+            <!--                  <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"-->
+            <!--                       class="posts-preview__thumb">-->
+            <!--                  <span class="posts-preview__cover-title">Race Nation Буковель 2019</span>-->
+            <!--                </a>-->
+            <p class="posts-preview__excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat...
+            </p>
+            <ul class="posts-preview__categories">
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Race Nation</a>
+              </li>
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Забеги</a>
+              </li>
+            </ul>
+          </li>
+          <li class="posts-preview__item">
+            <span class="posts-preview__date2">6.10.2019</span>
+            <h3 class="posts-preview__heading"><a href="/single.html">Race Nation Буковель 2019</a></h3>
+            <p class="posts-preview__excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat...
+            </p>
+            <ul class="posts-preview__categories">
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Тренировки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="posts-preview__item posts-preview__item--black ">
+            <span class="posts-preview__date2">6.10.2019</span>
+            <h3 class="posts-preview__heading"><a href="/single.html">Race Nation Буковель 2019</a></h3>
+            <p class="posts-preview__excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat...
+            </p>
+            <ul class="posts-preview__categories">
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Тренировки</a>
+              </li>
+            </ul>
+          </li>
+                        <li class="posts-preview__item">
+                          <span class="posts-preview__date2">11.09.2019</span>
+                          <h3 class="posts-preview__heading"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+<!--                          <a href="#" class="posts-preview__cover">-->
+<!--                            <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"-->
+<!--                                 class="posts-preview__thumb">-->
+<!--                          </a>-->
+                          <p class="posts-preview__excerpt">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                          <ul class="posts-preview__categories">
+                            <li class="posts-preview__categories-item">
+                              <a href="#" class="posts-preview__categories-link">Тренировки</a>
+                            </li>
+                          </ul>
+                        </li>
+
+          <li class="posts-preview__item posts-preview__item--grey">
+            <span class="posts-preview__date2">12.10.2019</span>
+            <h3 class="posts-preview__heading"><a href="/single.html">Как я пробежал свои первые 30 киллометров</a></h3>
+            <!--                <a href="#" class="posts-preview__cover">-->
+            <!--                  <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"-->
+            <!--                       class="posts-preview__thumb">-->
+            <!--                  <span class="posts-preview__cover-title">Race Nation Буковель 2019</span>-->
+            <!--                </a>-->
+            <p class="posts-preview__excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat...
+            </p>
+            <ul class="posts-preview__categories">
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Race Nation</a>
+              </li>
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Забеги</a>
+              </li>
+            </ul>
+          </li>
+          <li class="posts-preview__item">
+            <span class="posts-preview__date2">11.09.2019</span>
+            <h3 class="posts-preview__heading"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+            <!--                          <a href="#" class="posts-preview__cover">-->
+            <!--                            <img src="images/photo_2019-10-22_22-20-18.jpg" alt="Race Nation Буковель 2019<"-->
+            <!--                                 class="posts-preview__thumb">-->
+            <!--                          </a>-->
+            <p class="posts-preview__excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <ul class="posts-preview__categories">
+              <li class="posts-preview__categories-item">
+                <a href="#" class="posts-preview__categories-link">Тренировки</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
+
   </main>
 </div>
 
