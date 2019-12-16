@@ -24,9 +24,6 @@
     width: 4px;
     height: 4px;
     background-color: #000000;
-    //border-top: 1px solid $color-green-light;
-    //border-right: 1px solid $color-green-light;
-    //transform: rotate(45deg);
   }
 
   &:last-child {
@@ -47,13 +44,7 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  //border-bottom: 1px solid #000000;
   color: #000000;
-  //transition: all 0.2s linear;
-
-  //&:hover {
-  //  border-bottom-color: #ffffff;
-  //}
 }
 
 .breadcrumbs__current {

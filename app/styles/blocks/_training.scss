@@ -55,8 +55,6 @@
 }
 
 .training__strava-logo {
-  //position: relative;
-  //top: 2px;
   display: block;
   width: 100px;
 
@@ -119,14 +117,12 @@
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
-  //margin-bottom: 12px;
 }
 
 .training__info-value {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 24px;
-  //opacity: 0.35;
 }
 
 .training__info-title {
@@ -134,7 +130,6 @@
   font-size: 14px;
   font-weight: 300;
   color: #646464;
-  //text-align: center;
 }
 
 .training__info-km {

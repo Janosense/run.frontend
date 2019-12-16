@@ -27,17 +27,6 @@
   }
 }
 
-.posts-preview__title-main {
-  margin: 0 0 32px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: right;
-  color: #000000;
-}
-
 .posts-preview__heading {
   margin-bottom: 16px;
   padding: 0 16px;
@@ -47,12 +36,36 @@
     padding: 0 24px;
   }
 
+  @media (min-width: 413px) {
+    padding: 0
+  }
+
   @media (min-width: 1023px) {
     margin-bottom: 32px;
   }
 
   @media (min-width: 1439px) {
     margin-bottom: 44px;
+  }
+
+  &--main {
+    margin: 0 0 16px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: right;
+    color: #000000;
+
+    @media (min-width: 1023px) {
+      margin-bottom: 16px
+    }
+
+    @media (min-width: 1439px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
