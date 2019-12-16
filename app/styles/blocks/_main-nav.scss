@@ -43,7 +43,7 @@
   }
 
   @media (min-width: 1439px) {
-    top: 92px;
+    top: 100px;
 
     &--fixed {
       top: 0;
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: 1919px) {
-    top: 104px;
+    top: 112px;
 
     &--fixed {
       top: 0;
@@ -123,13 +123,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-  }
 
-  @media (min-width: 1919px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 767px) {
     &::after {
       content: "";
       position: absolute;
@@ -143,6 +137,11 @@
       transform: translate(0, 2px) scaleX(0.8);
       transition: all 0.3s ease
     }
+  }
+
+  @media (min-width: 1919px) {
+    padding: 14px 0;
+    font-size: 20px;
   }
 
   &--active {
