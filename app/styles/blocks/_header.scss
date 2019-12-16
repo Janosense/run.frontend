@@ -21,12 +21,8 @@
     position: relative;
     top: auto;
     left: auto;
-    padding: 8px 0 16px;
-    margin-bottom: 42px;
-  }
-
-  @media (min-width: 1023px) {
-    padding: 0 0 16px;
+    padding: 12px 0 16px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 1919px) {
@@ -64,6 +60,10 @@
   }
 
   @media (min-width: 1023px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 1439px) {
     font-size: 72px;
   }
 

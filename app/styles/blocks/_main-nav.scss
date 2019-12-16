@@ -21,7 +21,7 @@
   @media (min-width: 767px) {
     visibility: visible;
     position: absolute;
-    top: 68px;
+    top: 72px;
     height: auto;
     opacity: 1;
     transition: none;
@@ -35,7 +35,15 @@
   }
 
   @media (min-width: 1023px) {
-    top: 88px;
+    top: 80px;
+
+    &--fixed {
+      top: 0;
+    }
+  }
+
+  @media (min-width: 1439px) {
+    top: 92px;
 
     &--fixed {
       top: 0;
@@ -43,7 +51,7 @@
   }
 
   @media (min-width: 1919px) {
-    top: 100px;
+    top: 104px;
 
     &--fixed {
       top: 0;

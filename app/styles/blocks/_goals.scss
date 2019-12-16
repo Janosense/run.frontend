@@ -1,37 +1,67 @@
 .goals {
+  //display: none;
   padding: 64px 0;
 }
 
 .goals__wrapper {
   //display: flex;
   position: relative;
+  @media (min-width: 100px) and (max-width: 766px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .goals__heading {
-  position: absolute;
-  top: 250px;
-  right: -180px;
-  flex-shrink: 0;
-  margin: 0;
-  //padding-left: 367px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 36px;
-  transform: rotate(-90deg);
-  //transform-origin: 0 0;
+  display: none;
+
+  @media (min-width: 1023px) {
+    position: absolute;
+    top: 250px;
+    right: -232px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0;
+    //padding-left: 367px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    transform: rotate(-90deg);
+    //transform-origin: 0 0;
+  }
+
+  @media (min-width: 1439px) {
+    right: -180px;
+  }
 }
 
 .goals__track {
   margin-bottom: 40px;
-  padding-right: 64px;
   box-sizing: border-box;
+
+  @media (min-width: 1023px) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1439px) {
+    padding-right: 64px;
+  }
 }
 
 .goals__text {
+  padding: 0 16px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   text-align: right;
+
+  @media (min-width: 374px) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 18px;
+  }
 
   p {
     margin: 0;
